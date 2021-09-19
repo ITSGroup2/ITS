@@ -1,0 +1,1238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/stlab/its/romina#"
+     xml:base="http://w3id.org/stlab/its/romina"
+     xmlns:ns1="https://w3id.org/arco/ontology/context-description/"
+     xmlns:ns2="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:ns3="https://w3id.org/arco/ontology/arco/"
+     xmlns:ns5="https://w3id.org/arco/ontology/core/"
+     xmlns:ns6="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/stlab/its/romina">
+        <rdfs:label>ITS project: from text to knowledge graphs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#agent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#agent"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/hasTitle"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/AwardedTo -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/group2/ontology/AwardedTo">
+        <rdfs:comment>Relation between a prize and a person/ any kind of artwork.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/involvesCulturalProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/involvesCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredBy"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasRole"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/BibliographicResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/elements/1.1/BibliographicResource">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Actor -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Actor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">Person who portrays a character in a performance (male or female).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/PerformanceProperty -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty">
+        <rdfs:comment xml:lang="en">Form of art related to a performance or involved in the performance making-process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Prize -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Prize">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+        <rdfs:comment xml:lang="en">Tangible or Intangible reward, awarded to a person or a work of art</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Title -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Title">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:comment xml:lang="en">Title of an  artwork, cultural property or related</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/TangibleCulturalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Event"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/a497c21f-a86f-43af-b63c-d3f287950f28 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/a497c21f-a86f-43af-b63c-d3f287950f28">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Robert E. Griffith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/aa50638c-0049-4ef6-8174-82f2cce076ca -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/aa50638c-0049-4ef6-8174-82f2cce076ca">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Irene Sharaff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/c80e4971-a97c-4b3f-905f-139b22515de8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/c80e4971-a97c-4b3f-905f-139b22515de8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Saul Bass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/d99474b9-5e6e-454d-8de6-145421c0b4f3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/d99474b9-5e6e-454d-8de6-145421c0b4f3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Harold S. Prince</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/e8194ffd-df26-45cb-905b-8df48f1d68f2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/e8194ffd-df26-45cb-905b-8df48f1d68f2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Johnny Green</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/1b3465d7-1501-44f1-8caa-d3480c630488 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/1b3465d7-1501-44f1-8caa-d3480c630488">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Daniel L. Fapp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/16bd3718-e20b-476c-9b79-da26947ac947 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/16bd3718-e20b-476c-9b79-da26947ac947">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/07610fb0-0456-4769-8110-c86ddbbeb8b0"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>two gangs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/1943271a-6b16-417a-8813-83bb47306ae6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/1943271a-6b16-417a-8813-83bb47306ae6">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ernest Lehman</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/451c726e-5ca5-4c29-8ba1-071727b99638 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/451c726e-5ca5-4c29-8ba1-071727b99638">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaRole/0c9a1411-7062-4b3d-b0f1-56fe288e37a9"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/e4204b15-f1e4-4752-8a4a-43652e3303ae"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>young Puerto Rican girl</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/5b1c2d61-e2f7-4057-a43a-422ee3ccb999 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/5b1c2d61-e2f7-4057-a43a-422ee3ccb999">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/8a651fbb-795d-4521-9398-6c27a61a2826"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/e4204b15-f1e4-4752-8a4a-43652e3303ae"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>mainland boy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/512f1405-3f1b-41e5-81ec-fe825319a468 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/512f1405-3f1b-41e5-81ec-fe825319a468">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/a44d1e74-9250-4032-9c2e-c737511fef36"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/21ac29dd-ef0d-4703-a129-0ec674a71960"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Chakiris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/6d23e8a8-01af-49b6-a51a-6d28ba5a8c62 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/6d23e8a8-01af-49b6-a51a-6d28ba5a8c62">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/d8f9120d-677b-430d-acb7-ecc6b0d52b96"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>girl’s Puerto Rican protector</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/744d8f71-0b3b-49d7-8114-f4313dc3742f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/744d8f71-0b3b-49d7-8114-f4313dc3742f">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/8a74d37d-19df-4b09-a5c8-d61cc913f755"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/21ac29dd-ef0d-4703-a129-0ec674a71960"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rita Moreno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaAgent/82dec7d6-cc35-4eb8-be34-e00766d5f808 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaAgent/82dec7d6-cc35-4eb8-be34-e00766d5f808">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Thomas Stanford</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaBibliographicResource/af51f139-dacd-4841-acd2-398c0e9cae30 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaBibliographicResource/af51f139-dacd-4841-acd2-398c0e9cae30">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/5edb864b-4ca5-4950-a365-5720d5067731"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>book</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaEvent/d8f9120d-677b-430d-acb7-ecc6b0d52b96 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaEvent/d8f9120d-677b-430d-acb7-ecc6b0d52b96">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>murder of the American swain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaEvent/e4204b15-f1e4-4752-8a4a-43652e3303ae -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaEvent/e4204b15-f1e4-4752-8a4a-43652e3303ae">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>romance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaEvent/07610fb0-0456-4769-8110-c86ddbbeb8b0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaEvent/07610fb0-0456-4769-8110-c86ddbbeb8b0">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>enmity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaEvent/21ac29dd-ef0d-4703-a129-0ec674a71960 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaEvent/21ac29dd-ef0d-4703-a129-0ec674a71960">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaEvent/922cf2e6-586e-4427-bd5b-4a9f626e40a5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaEvent/922cf2e6-586e-4427-bd5b-4a9f626e40a5">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>falls in love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/a2176f1d-590c-4d4c-a599-0b8d8518f97e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/a2176f1d-590c-4d4c-a599-0b8d8518f97e">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>I Feel Pretty</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/a295900b-9bde-4a6f-baf5-9ff1fbf9b1fc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/a295900b-9bde-4a6f-baf5-9ff1fbf9b1fc">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/rominaEvent/e4204b15-f1e4-4752-8a4a-43652e3303ae"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/rominaEvent/07610fb0-0456-4769-8110-c86ddbbeb8b0"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Plottage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/ac335c46-f43b-4623-bf04-201a37c3cb18 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/ac335c46-f43b-4623-bf04-201a37c3cb18">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/2ddd560b-998e-4926-a8ae-40e26b30990a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>choreography</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/aecc12e4-95e5-4951-a282-4d69be1ee0bb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/aecc12e4-95e5-4951-a282-4d69be1ee0bb">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>America</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/afb7e5cf-461e-470b-b39f-5c16db5e3732 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/afb7e5cf-461e-470b-b39f-5c16db5e3732">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/9821be61-10a3-4825-93a8-c70b7db113dd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Broadway musical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/b0f6ccee-bbef-499c-aa35-0b8b59f36864 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/b0f6ccee-bbef-499c-aa35-0b8b59f36864">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/9821be61-10a3-4825-93a8-c70b7db113dd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>musical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/b37dbf84-0677-4428-bb71-c6c8762439b5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/b37dbf84-0677-4428-bb71-c6c8762439b5">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/1943271a-6b16-417a-8813-83bb47306ae6"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/rominaBibliographicResource/af51f139-dacd-4841-acd2-398c0e9cae30"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>screenplay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/b6e432b7-09d1-4a6e-92db-f74087ccc4d0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/b6e432b7-09d1-4a6e-92db-f74087ccc4d0">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gee, Officer Krupke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/baa56a8b-f964-456a-a8a8-8b6120bb5cba -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/baa56a8b-f964-456a-a8a8-8b6120bb5cba">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>the Sharks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/c82c2274-732b-45a4-9869-adb10bdd208d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/c82c2274-732b-45a4-9869-adb10bdd208d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/1213977e-c389-4f68-9165-16fa384e8c5d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Maria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/cb602234-8b5d-4427-8a5e-6eb369229e9b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/cb602234-8b5d-4427-8a5e-6eb369229e9b">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/ca342f8b-16e0-4052-aee7-1c1a6afc94cb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Cool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/d9d7fd52-a786-4224-8966-7c9c6439ecb0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/d9d7fd52-a786-4224-8966-7c9c6439ecb0">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/418effe1-18af-4b2a-b065-61da288be4b6"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>lyrics</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/ec5c0442-93e3-4911-bf04-902534f008ce -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/ec5c0442-93e3-4911-bf04-902534f008ce">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Somewhere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/f9ebdfd9-3e7e-4cfa-96bf-fca50cafe420 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/f9ebdfd9-3e7e-4cfa-96bf-fca50cafe420">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>bits of action</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/0bf51e13-170a-4e90-b10e-054400d027a1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/0bf51e13-170a-4e90-b10e-054400d027a1">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/1b3465d7-1501-44f1-8caa-d3480c630488"/>
+        <ns5:hasLocation rdf:resource="http://w3id.org/stlab/its/rominaLocation/cffd40ae-4755-4adb-85cf-b5211359b100"/>
+        <ns5:hasLocation rdf:resource="http://w3id.org/stlab/its/rominaLocation/0bf9203e-7709-472f-9328-ccb85af82ce5"/>
+        <ns5:hasLocation rdf:resource="http://w3id.org/stlab/its/rominaLocation/7a8575e5-b38e-46b4-baef-138d1577d8c3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>aerial prolog</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/0d73d9f7-099d-4661-87a2-488a73eb1d40 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/0d73d9f7-099d-4661-87a2-488a73eb1d40">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/1a5536b3-bf22-4b82-8735-f29b28263bef"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jet Song</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/00ced04f-58f8-43c0-b7e5-71299439fec1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/00ced04f-58f8-43c0-b7e5-71299439fec1">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/0a49b477-cee9-45f8-80b3-d817b389eb7f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>I Have a Love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/02108c22-0776-403a-8a40-734d48212191 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/02108c22-0776-403a-8a40-734d48212191">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>long holds on individual scenes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/05a25cfe-8b64-4714-bfee-e310c2baf6a1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/05a25cfe-8b64-4714-bfee-e310c2baf6a1">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/f9fbe983-e986-4366-83d8-9773800692ec"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/faac80ad-edc7-4563-b102-f447c2a07613"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tonight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/14300a50-582d-4c39-b885-31cacd4a838d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/14300a50-582d-4c39-b885-31cacd4a838d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/82dec7d6-cc35-4eb8-be34-e00766d5f808"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>editing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/17a7f362-0180-4433-ac02-b457d32a91af -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/17a7f362-0180-4433-ac02-b457d32a91af">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/e8194ffd-df26-45cb-905b-8df48f1d68f2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>music score</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/18ba1a29-0295-45ba-82e2-038577c56b23 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/18ba1a29-0295-45ba-82e2-038577c56b23">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Something Comin&apos;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/2c55d466-7536-4473-808b-8d9151fc1efb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/2c55d466-7536-4473-808b-8d9151fc1efb">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/c80e4971-a97c-4b3f-905f-139b22515de8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>novel presentation of titles and credits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/2fa1298e-c2ac-4984-b40c-d71e901e932f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/2fa1298e-c2ac-4984-b40c-d71e901e932f">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/a2176f1d-590c-4d4c-a599-0b8d8518f97e"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/c82c2274-732b-45a4-9869-adb10bdd208d"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/ec5c0442-93e3-4911-bf04-902534f008ce"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/18ba1a29-0295-45ba-82e2-038577c56b23"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>song numbers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/3e83b798-bd7b-4931-89ac-e4e865aa2eca -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/3e83b798-bd7b-4931-89ac-e4e865aa2eca">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/aecc12e4-95e5-4951-a282-4d69be1ee0bb"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/b6e432b7-09d1-4a6e-92db-f74087ccc4d0"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/cb602234-8b5d-4427-8a5e-6eb369229e9b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Musical numbers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/470d48db-3c21-4a6c-aeb0-5c2b4c4597db -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/470d48db-3c21-4a6c-aeb0-5c2b4c4597db">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns3:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/0bf51e13-170a-4e90-b10e-054400d027a1"/>
+        <ns3:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/76782635-6b58-4f42-8e18-5a177ac32b29"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/1b3465d7-1501-44f1-8caa-d3480c630488"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/48c254a4-5ca1-4c98-a3b1-cb490b052efc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/48c254a4-5ca1-4c98-a3b1-cb490b052efc">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/a2b94683-bb1d-4874-b039-a414ba333402"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>One Hand, One Heart</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/60495fd5-d200-499d-9a34-b37f4fc122aa -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/60495fd5-d200-499d-9a34-b37f4fc122aa">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/b60c387e-2827-4f55-97a1-a70ba420489d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>music</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/663cb4e0-d264-4104-8d57-3abedf3ddabc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/663cb4e0-d264-4104-8d57-3abedf3ddabc">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>dynamic movement</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/7d87bf3f-d041-42ed-9e8c-36075aac608e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/7d87bf3f-d041-42ed-9e8c-36075aac608e">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/a497c21f-a86f-43af-b63c-d3f287950f28"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/d99474b9-5e6e-454d-8de6-145421c0b4f3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Broadway production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/7dac7048-d3d9-4273-b883-492a28165122 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/7dac7048-d3d9-4273-b883-492a28165122">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <ns3:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/f9ebdfd9-3e7e-4cfa-96bf-fca50cafe420"/>
+        <ns3:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/02108c22-0776-403a-8a40-734d48212191"/>
+        <ns3:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/663cb4e0-d264-4104-8d57-3abedf3ddabc"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/a47731bc-1602-4a75-be64-ccf9093ca2bd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>stage and screen technique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/76782635-6b58-4f42-8e18-5a177ac32b29 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/76782635-6b58-4f42-8e18-5a177ac32b29">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>a three-minute orchestral overture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/9821be61-10a3-4825-93a8-c70b7db113dd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/9821be61-10a3-4825-93a8-c70b7db113dd">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>“West Side Story”</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaInformationObject/9932a130-d5d9-4751-962a-239075553106 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaInformationObject/9932a130-d5d9-4751-962a-239075553106">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/a2b94683-bb1d-4874-b039-a414ba333402"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaPerson/be08442c-f085-4f1e-8024-f317c0446c5c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>A Boy Like That</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaLocation/cffd40ae-4755-4adb-85cf-b5211359b100 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaLocation/cffd40ae-4755-4adb-85cf-b5211359b100">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Battery uptown</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaLocation/0bf9203e-7709-472f-9328-ccb85af82ce5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaLocation/0bf9203e-7709-472f-9328-ccb85af82ce5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gotham</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaLocation/7a8575e5-b38e-46b4-baef-138d1577d8c3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaLocation/7a8575e5-b38e-46b4-baef-138d1577d8c3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>West Side</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/a2b94683-bb1d-4874-b039-a414ba333402 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/a2b94683-bb1d-4874-b039-a414ba333402">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/a44d1e74-9250-4032-9c2e-c737511fef36 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/a44d1e74-9250-4032-9c2e-c737511fef36">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/a5481037-18e9-4b4a-a6b8-0696f52d3ea4"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/c50e44c5-bc3b-4ce1-b290-5a1fbbdf866c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>George Chakiris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/a47731bc-1602-4a75-be64-ccf9093ca2bd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/a47731bc-1602-4a75-be64-ccf9093ca2bd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/9e76b795-7323-4090-a76a-2b78d3fd46ac"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Wise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/b60c387e-2827-4f55-97a1-a70ba420489d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/b60c387e-2827-4f55-97a1-a70ba420489d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leonard Bernstein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/be08442c-f085-4f1e-8024-f317c0446c5c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/be08442c-f085-4f1e-8024-f317c0446c5c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/f9fbe983-e986-4366-83d8-9773800692ec"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/0a49b477-cee9-45f8-80b3-d817b389eb7f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/ca342f8b-16e0-4052-aee7-1c1a6afc94cb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/ca342f8b-16e0-4052-aee7-1c1a6afc94cb">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/15019b45-b3e0-44e1-ab5f-8857cb323234"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tucker Smith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/e5ba2c32-84c1-4529-8d71-c9f39e617e29 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/e5ba2c32-84c1-4529-8d71-c9f39e617e29">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/0c9a1411-7062-4b3d-b0f1-56fe288e37a9"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Natalie Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/f9fbe983-e986-4366-83d8-9773800692ec -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/f9fbe983-e986-4366-83d8-9773800692ec">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/0a49b477-cee9-45f8-80b3-d817b389eb7f"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>femme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/faac80ad-edc7-4563-b102-f447c2a07613 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/faac80ad-edc7-4563-b102-f447c2a07613">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/1213977e-c389-4f68-9165-16fa384e8c5d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/0a49b477-cee9-45f8-80b3-d817b389eb7f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/0a49b477-cee9-45f8-80b3-d817b389eb7f">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/0ab2c9a6-1329-430c-a0cd-0df045b39562">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Miss Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/1a5536b3-bf22-4b82-8735-f29b28263bef -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/1a5536b3-bf22-4b82-8735-f29b28263bef">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/1e8f5bef-8f7f-468f-974a-bab33620fe06"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tamblyn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/1e8f5bef-8f7f-468f-974a-bab33620fe06 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/1e8f5bef-8f7f-468f-974a-bab33620fe06">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/a177433a-6e0c-4f3a-8328-8d1b4d2949a8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Russ Tamblyn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/10078324-431a-457f-b253-4d1ebf178a69 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/10078324-431a-457f-b253-4d1ebf178a69">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Boris Leven</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/1213977e-c389-4f68-9165-16fa384e8c5d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/1213977e-c389-4f68-9165-16fa384e8c5d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/8a651fbb-795d-4521-9398-6c27a61a2826"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/15019b45-b3e0-44e1-ab5f-8857cb323234 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/15019b45-b3e0-44e1-ab5f-8857cb323234">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/26fd8552-a914-471b-b831-8d5df5fe0bd1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tucker Smith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/19f3a8ed-410a-4cd8-9193-70c4c95f1b30 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/19f3a8ed-410a-4cd8-9193-70c4c95f1b30">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/rominaPerson/2ddd560b-998e-4926-a8ae-40e26b30990a"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/99881e07-443e-4dd2-b625-e3dca649dced"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jerome Robbins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/2ddd560b-998e-4926-a8ae-40e26b30990a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/2ddd560b-998e-4926-a8ae-40e26b30990a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jerome Robbins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/201fc882-fcab-44fd-87e0-6d51732e8e40 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/201fc882-fcab-44fd-87e0-6d51732e8e40">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/02644261-00b8-4608-b3f9-91e3c9e99203"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Simon Oakland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/418effe1-18af-4b2a-b065-61da288be4b6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/418effe1-18af-4b2a-b065-61da288be4b6">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stephen Sondheim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/5d5bae0d-2362-4acd-8a28-bcfb8fa8c02c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/5d5bae0d-2362-4acd-8a28-bcfb8fa8c02c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/9e8278da-880d-4498-8398-c3f61c3a1b09"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ned Glass</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/5edb864b-4ca5-4950-a365-5720d5067731 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/5edb864b-4ca5-4950-a365-5720d5067731">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Arthur Laurents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/75f9c519-7102-4d33-b7dd-4231874adfba -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/75f9c519-7102-4d33-b7dd-4231874adfba">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/02644261-00b8-4608-b3f9-91e3c9e99203"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Bramley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/8a651fbb-795d-4521-9398-6c27a61a2826 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/8a651fbb-795d-4521-9398-6c27a61a2826">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/922cf2e6-586e-4427-bd5b-4a9f626e40a5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Richard Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/8a74d37d-19df-4b09-a5c8-d61cc913f755 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/8a74d37d-19df-4b09-a5c8-d61cc913f755">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rita Moreno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/8b099eb9-63a0-4238-af70-793e3696488d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/8b099eb9-63a0-4238-af70-793e3696488d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/9321efec-7aa5-405b-93e3-4e6faa509c86"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tony Mordente</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaPerson/9e76b795-7323-4090-a76a-2b78d3fd46ac -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaPerson/9e76b795-7323-4090-a76a-2b78d3fd46ac">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaRole/a26ae9e7-fe3b-46a1-bf80-3bafc81ad097"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Wise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/a177433a-6e0c-4f3a-8328-8d1b4d2949a8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/a177433a-6e0c-4f3a-8328-8d1b4d2949a8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>leader of the white Jets gang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/a26ae9e7-fe3b-46a1-bf80-3bafc81ad097 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/a26ae9e7-fe3b-46a1-bf80-3bafc81ad097">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>producer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/a5481037-18e9-4b4a-a6b8-0696f52d3ea4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/a5481037-18e9-4b4a-a6b8-0696f52d3ea4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ns6:hasTitle rdf:resource="http://w3id.org/stlab/its/rominaInformationObject/baa56a8b-f964-456a-a8a8-8b6120bb5cba"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>leader of the Puerto Rican gang</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/b9cd2525-e9aa-4f14-b3cf-a1fc612817f2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/b9cd2525-e9aa-4f14-b3cf-a1fc612817f2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ns5:hasRole rdf:resource="http://w3id.org/stlab/its/rominaPerson/10078324-431a-457f-b253-4d1ebf178a69"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>production designer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/c50e44c5-bc3b-4ce1-b290-5a1fbbdf866c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/c50e44c5-bc3b-4ce1-b290-5a1fbbdf866c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>brother of femme lead</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/0c9a1411-7062-4b3d-b0f1-56fe288e37a9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/0c9a1411-7062-4b3d-b0f1-56fe288e37a9">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ns2:agent rdf:resource="http://w3id.org/stlab/its/rominaEvent/922cf2e6-586e-4427-bd5b-4a9f626e40a5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>the Puerto Rican</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/02644261-00b8-4608-b3f9-91e3c9e99203 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/02644261-00b8-4608-b3f9-91e3c9e99203">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>police officers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/26fd8552-a914-471b-b831-8d5df5fe0bd1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/26fd8552-a914-471b-b831-8d5df5fe0bd1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>white gangster</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/9e8278da-880d-4498-8398-c3f61c3a1b09 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/9e8278da-880d-4498-8398-c3f61c3a1b09">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>owner of the candy store</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/9321efec-7aa5-405b-93e3-4e6faa509c86 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/9321efec-7aa5-405b-93e3-4e6faa509c86">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jets member</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaRole/99881e07-443e-4dd2-b625-e3dca649dced -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaRole/99881e07-443e-4dd2-b625-e3dca649dced">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>co-director</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/rominaTangibleCulturalProperty/e63e33a3-0bb8-418d-9acc-abc159c48ebc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/rominaTangibleCulturalProperty/e63e33a3-0bb8-418d-9acc-abc159c48ebc">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/rominaAgent/aa50638c-0049-4ef6-8174-82f2cce076ca"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>costumes</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
