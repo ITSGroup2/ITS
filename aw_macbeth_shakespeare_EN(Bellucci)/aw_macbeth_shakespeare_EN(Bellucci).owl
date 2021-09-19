@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/stlab/its/elisabellucci#"
+     xml:base="http://w3id.org/stlab/its/elisabellucci"
+     xmlns:ns1="http://purl.org/dc/elements/1.1/"
+     xmlns:ns3="https://w3id.org/arco/ontology/context-description/"
+     xmlns:ns4="https://w3id.org/arco/ontology/core/"
+     xmlns:ns5="https://w3id.org/italia/onto/TI/"
+     xmlns:ns6="https://w3id.org/arco/ontology/arco/"
+     xmlns:ns7="http://purl.org/NET/c4dm/event.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/stlab/its/elisabellucci">
+        <rdfs:label>ITS project: from text to knowledge graphs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/c4dm/event.owl#time -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/NET/c4dm/event.owl#time"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/hasTitle"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/AwardedTo -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/group2/ontology/AwardedTo">
+        <rdfs:comment>Relation between a prize and a person/ any kind of artwork.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/involvesCulturalProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/involvesCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredBy"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasRole"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/BibliographicResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/elements/1.1/BibliographicResource">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Actor -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Actor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">Person who portrays a character in a performance (male or female).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/PerformanceProperty -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty">
+        <rdfs:comment xml:lang="en">Form of art related to a performance or involved in the performance making-process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Prize -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Prize">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+        <rdfs:comment xml:lang="en">Tangible or Intangible reward, awarded to a person or a work of art</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Title -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Title">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:comment xml:lang="en">Title of an  artwork, cultural property or related</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/TangibleCulturalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Event"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/arco/its/Agent/df280fb2-988e-4ddc-9f43-93cdac4a89c1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Agent/df280fb2-988e-4ddc-9f43-93cdac4a89c1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/BibliographicResource/b0d537c1-80ca-4d9a-ae54-5a16aedf80d1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/BibliographicResource/b0d537c1-80ca-4d9a-ae54-5a16aedf80d1">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <ns4:hasLocation rdf:resource="https://w3id.org/arco/its/Location/cf833a3b-64a1-450a-a66c-525e37406066"/>
+        <ns4:hasLocation rdf:resource="https://w3id.org/arco/its/Location/345a65f0-4828-41f7-9b7f-899328ab03fb"/>
+        <ns4:hasLocation rdf:resource="https://w3id.org/arco/its/Location/614107c7-d9f4-407a-b03d-333210753718"/>
+        <ns5:atTime rdf:resource="https://w3id.org/arco/its/TimeInterval/031d60ef-b2d6-498d-8aa6-7909ac6424ee"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Holinshed&apos;s Chronicles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Event/c5abd63f-01bd-4183-b642-93dfde235d35 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Event/c5abd63f-01bd-4183-b642-93dfde235d35">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <ns7:time rdf:resource="https://w3id.org/arco/its/TimeInterval/002dfa96-b105-4825-b989-4772fcffc2a6"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gunpowder Plot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Event/669e02b8-45d6-49ed-98fb-2f665e8f5db0 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Event/669e02b8-45d6-49ed-98fb-2f665e8f5db0">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>execution of Henry Garnet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/ac86dbe3-a940-4daf-868f-96ef8b1fc87b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/ac86dbe3-a940-4daf-868f-96ef8b1fc87b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/InformationObject/29ca58e9-0b75-4ecc-a664-b598641a8940"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/0669ec60-3587-4f66-a954-74881cdc7b0c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/e0d2e6c4-4f79-412b-9bf1-8a4b8b4db5da -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/e0d2e6c4-4f79-412b-9bf1-8a4b8b4db5da">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Othello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/fada1658-e8e5-49f9-bbd1-35c4eb04fbfe -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/fada1658-e8e5-49f9-bbd1-35c4eb04fbfe">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/04f28822-b7a2-4c83-a06c-16dd8ca88af5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/04f28822-b7a2-4c83-a06c-16dd8ca88af5">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/29ca58e9-0b75-4ecc-a664-b598641a8940"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>tragedy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/0669ec60-3587-4f66-a954-74881cdc7b0c -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/0669ec60-3587-4f66-a954-74881cdc7b0c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Scottish Play</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/195a4ea4-1e23-4190-ba93-398b57b1be2e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/195a4ea4-1e23-4190-ba93-398b57b1be2e">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/29ca58e9-0b75-4ecc-a664-b598641a8940 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/29ca58e9-0b75-4ecc-a664-b598641a8940">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/9fcbf212-83c1-4221-b8b1-d89ff9efedd8"/>
+        <ns3:hasAuthor rdf:resource="https://w3id.org/arco/its/Agent/df280fb2-988e-4ddc-9f43-93cdac4a89c1"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/BibliographicResource/b0d537c1-80ca-4d9a-ae54-5a16aedf80d1"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/Event/669e02b8-45d6-49ed-98fb-2f665e8f5db0"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/e4481f10-a8ab-4afc-8c8c-5f19883fbe00"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/1312d9f8-18d0-493b-b1e7-7665531c604e"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/22a5fe45-45c8-4a90-8af1-94f8a4b5499a"/>
+        <ns3:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/4d5ea991-136e-4227-9cd0-a9813a68a3f5"/>
+        <ns5:atTime rdf:resource="https://w3id.org/arco/its/TimeInterval/0bad7c02-9135-48c0-bf4e-54834ef62bbe"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/4b30df1b-9a0b-4783-8d28-dca45b9bff20 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/4b30df1b-9a0b-4783-8d28-dca45b9bff20">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/ac86dbe3-a940-4daf-868f-96ef8b1fc87b"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/e0d2e6c4-4f79-412b-9bf1-8a4b8b4db5da"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/fada1658-e8e5-49f9-bbd1-35c4eb04fbfe"/>
+        <ns1:hasTitle rdf:resource="https://w3id.org/arco/its/InformationObject/195a4ea4-1e23-4190-ba93-398b57b1be2e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare&apos;s tragedies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/9fcbf212-83c1-4221-b8b1-d89ff9efedd8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/9fcbf212-83c1-4221-b8b1-d89ff9efedd8">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Tragedy of Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/cf833a3b-64a1-450a-a66c-525e37406066 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/cf833a3b-64a1-450a-a66c-525e37406066">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Scotland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/345a65f0-4828-41f7-9b7f-899328ab03fb -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/345a65f0-4828-41f7-9b7f-899328ab03fb">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ireland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/614107c7-d9f4-407a-b03d-333210753718 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/614107c7-d9f4-407a-b03d-333210753718">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>England</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/d83ea19f-c145-48c9-b993-74161f0a9da7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/d83ea19f-c145-48c9-b993-74161f0a9da7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns4:hasRole rdf:resource="https://w3id.org/arco/its/Role/b0ec7cd3-bed2-4931-9587-cb1083141813"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>James I</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/e4481f10-a8ab-4afc-8c8c-5f19883fbe00 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/e4481f10-a8ab-4afc-8c8c-5f19883fbe00">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macduff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/1312d9f8-18d0-493b-b1e7-7665531c604e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/1312d9f8-18d0-493b-b1e7-7665531c604e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/7c6b645c-5a45-4d51-9c9d-b49a7a84b448"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/22a5fe45-45c8-4a90-8af1-94f8a4b5499a -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/22a5fe45-45c8-4a90-8af1-94f8a4b5499a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/48ff4017-4440-45b2-81e6-0861db3ae2c8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Duncan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/241cedc9-efea-441f-be16-78dd39b473eb -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/241cedc9-efea-441f-be16-78dd39b473eb">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns4:hasRole rdf:resource="https://w3id.org/arco/its/Role/c7516f87-90ce-4053-a1c1-94bd7b35960a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Lady Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/4d5ea991-136e-4227-9cd0-a9813a68a3f5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/4d5ea991-136e-4227-9cd0-a9813a68a3f5">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King of Scotland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/48ff4017-4440-45b2-81e6-0861db3ae2c8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/48ff4017-4440-45b2-81e6-0861db3ae2c8">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns4:hasRole rdf:resource="https://w3id.org/arco/its/Role/58a6c90e-f86c-48ef-bc03-58fd91f675f4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King Duncan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/7c6b645c-5a45-4d51-9c9d-b49a7a84b448 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/7c6b645c-5a45-4d51-9c9d-b49a7a84b448">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns4:hasRole rdf:resource="https://w3id.org/arco/its/Role/58a6c90e-f86c-48ef-bc03-58fd91f675f4"/>
+        <ns4:hasRole rdf:resource="https://w3id.org/arco/its/Role/962e2111-f906-4738-a4b9-c565643c15e7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/b0ec7cd3-bed2-4931-9587-cb1083141813 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/b0ec7cd3-bed2-4931-9587-cb1083141813">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>patron of Shakespeare&apos;s acting company</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/c7516f87-90ce-4053-a1c1-94bd7b35960a -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/c7516f87-90ce-4053-a1c1-94bd7b35960a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>wife</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/58a6c90e-f86c-48ef-bc03-58fd91f675f4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/58a6c90e-f86c-48ef-bc03-58fd91f675f4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King of Scotland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/962e2111-f906-4738-a4b9-c565643c15e7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/962e2111-f906-4738-a4b9-c565643c15e7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Scottish general</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TangibleCulturalProperty/c6f5348e-b058-4f45-a9f8-3fe00a63c656 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TangibleCulturalProperty/c6f5348e-b058-4f45-a9f8-3fe00a63c656">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+        <ns6:involvesCulturalProperty rdf:resource="https://w3id.org/arco/its/InformationObject/29ca58e9-0b75-4ecc-a664-b598641a8940"/>
+        <ns5:atTime rdf:resource="https://w3id.org/arco/its/TimeInterval/7a8af2b4-5b10-4703-82f3-328cdedbb8e8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Folio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TimeInterval/0bad7c02-9135-48c0-bf4e-54834ef62bbe -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TimeInterval/0bad7c02-9135-48c0-bf4e-54834ef62bbe">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1606</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TimeInterval/002dfa96-b105-4825-b989-4772fcffc2a6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TimeInterval/002dfa96-b105-4825-b989-4772fcffc2a6">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1605</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TimeInterval/031d60ef-b2d6-498d-8aa6-7909ac6424ee -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TimeInterval/031d60ef-b2d6-498d-8aa6-7909ac6424ee">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1587</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TimeInterval/7a8af2b4-5b10-4703-82f3-328cdedbb8e8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TimeInterval/7a8af2b4-5b10-4703-82f3-328cdedbb8e8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1623</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
