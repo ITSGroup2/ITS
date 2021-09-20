@@ -1,0 +1,2286 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/stlab/its/group2#"
+     xml:base="http://w3id.org/stlab/its/group2"
+     xmlns:ns1="https://w3id.org/arco/ontology/context-description/"
+     xmlns:ns2="https://w3id.org/arco/ontology/core/"
+     xmlns:ns3="https://w3id.org/italia/onto/TI/"
+     xmlns:ns4="http://purl.org/dc/elements/1.1/"
+     xmlns:ns6="https://w3id.org/arco/ontology/arco/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/stlab/its/group2">
+        <rdfs:label>ITS project: from text to knowledge graphs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/hasTitle"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/AwardedTo -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/group2/ontology/AwardedTo">
+        <rdfs:comment>Relation between a prize and a person/ any kind of artwork.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/involvesCulturalProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/involvesCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredBy"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasRole"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.beniculturali.it/cis/CulturalEvent -->
+
+    <owl:Class rdf:about="http://dati.beniculturali.it/cis/CulturalEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Actor -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Actor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">Person who portrays a character in a performance (male or female).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/PerformanceProperty -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/PerformanceProperty">
+        <rdfs:comment xml:lang="en">Form of art related to a performance or involved in the performance making-process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Prize -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Prize">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+        <rdfs:comment xml:lang="en">Tangible or Intangible reward, awarded to a person or a work of art</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2/ontology/Title -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/group2/ontology/Title">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:comment xml:lang="en">Title of an  artwork, cultural property or related</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/TangibleCulturalProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/arco/TangibleCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/Event -->
+
+    <owl:Class rdf:about="https://w3id.org/arco/ontology/core/Event"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/a6b35f7b-1dfc-4ed8-a2f2-4e34c9e4add8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/a6b35f7b-1dfc-4ed8-a2f2-4e34c9e4add8">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/197696ac-93e8-46e9-8632-19eaa82722af"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Michael Maloney</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/ad39f122-db7d-4392-9cd4-1d26fea036ce -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/ad39f122-db7d-4392-9cd4-1d26fea036ce">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tom Stoppard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/afb343be-bedb-432c-bf1a-31a09202119f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/afb343be-bedb-432c-bf1a-31a09202119f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/181b4204-baa9-4ebc-9bb0-15c971e66f1c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tom Stoppard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/be09ac4a-91b6-4c82-abaf-b10574147cdd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/be09ac4a-91b6-4c82-abaf-b10574147cdd">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/55b1501a-20a7-4c04-bcae-cd679e0678f7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gwyneth Paltrow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/ce7c87c3-fb29-4503-8d38-f2fbd14639a5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/ce7c87c3-fb29-4503-8d38-f2fbd14639a5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/37403d06-d24a-4a11-a999-53244b5f2817"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Baz Luhrmann</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/d47bc46b-dd07-4b80-aae5-f94d32326daf -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/d47bc46b-dd07-4b80-aae5-f94d32326daf">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/c16365ec-7234-413d-b65c-a0db890b8398"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Claire Danes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/d88de7aa-4d1f-480a-9a7f-f06e57ba4572 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/d88de7aa-4d1f-480a-9a7f-f06e57ba4572">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/57a6ff81-55b5-42ed-84ec-9669566812e5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Anne Hathaway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/d8c214eb-7ae4-4081-9f72-2c60a02f8a0f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/d8c214eb-7ae4-4081-9f72-2c60a02f8a0f">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0c2c0367-466f-4be6-8984-dfeda0705e5f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Julia Stiles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/e27729f5-3c97-481c-8da6-a6b937376fba -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/e27729f5-3c97-481c-8da6-a6b937376fba">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Orson Welles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasLocation rdf:resource="http://w3id.org/stlab/its/group2Location/33f0ca11-8896-4946-97aa-1be6bf86e618"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/11bc837c-efd9-4c9c-a776-a2b4ff73b06a"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/8958c7a1-5d2c-4312-b9ab-ee7db4c5f4fc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/e9b13944-f2cc-466e-b42e-de7a1b6a0fed -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/e9b13944-f2cc-466e-b42e-de7a1b6a0fed">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0c2c0367-466f-4be6-8984-dfeda0705e5f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joseph Gordon-Levitt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/e9e9b641-03df-4a4b-9b32-61e9d3077db8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/e9e9b641-03df-4a4b-9b32-61e9d3077db8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Arthur Laurents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/eacb07b7-390b-487a-a890-c211f3e5d05a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/eacb07b7-390b-487a-a890-c211f3e5d05a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jerome Robbins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/ecd1b52a-3817-41a9-9c9b-8cb1d42d3657 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/ecd1b52a-3817-41a9-9c9b-8cb1d42d3657">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/df549799-54dd-4f3d-928b-974019bd4d4b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Keanu Reeves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/fc98672a-9dfe-4262-a53e-cb56699d3fec -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/fc98672a-9dfe-4262-a53e-cb56699d3fec">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Roger Allers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/fd2646d1-1644-4794-90b3-226ede855c28 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/fd2646d1-1644-4794-90b3-226ede855c28">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasLocation rdf:resource="http://w3id.org/stlab/its/group2Location/49e8944e-f348-4d09-b1af-83c2f1c639a7"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/a6e490a8-c958-411f-9d5e-c956641bf7b7"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/4a46c7be-b144-4dfb-bebc-11cb89d9f54e"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/5f1da41b-6dfd-4deb-aaca-505c68fb6d4f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Kenneth Branagh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/08d26e71-4241-4786-967b-0e8aafcc44e0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/08d26e71-4241-4786-967b-0e8aafcc44e0">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0eb90d70-d777-4116-8c0c-f4f24562a486"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Franco Zeffirelli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/1f88007b-51b0-415b-b339-406febf5e7ac -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/1f88007b-51b0-415b-b339-406febf5e7ac">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Zeffirelli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/20e69bb6-2bf9-4702-b05f-c0afa5911b14 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/20e69bb6-2bf9-4702-b05f-c0afa5911b14">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/94181df3-72d7-4ba8-b71f-be39d0182335"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gary Oldman</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/23e564b1-bf9b-46a3-8f43-40ef5d426142 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/23e564b1-bf9b-46a3-8f43-40ef5d426142">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2InformationObject/2e2eb19a-57ea-4a2e-baf7-7ebad0bfb049"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Michael Fassbender</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/29dc832e-2a74-46c5-8603-9daaa0131074 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/29dc832e-2a74-46c5-8603-9daaa0131074">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/93cbbb88-11f0-4c49-ba64-ee53ad172c41"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Natalie Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/336523c4-7d21-4f9c-b41a-06ac8d56f35b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/336523c4-7d21-4f9c-b41a-06ac8d56f35b">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/c5e3aca7-9b34-4721-85d0-3e558304665f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joseph Fiennes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/381da4bf-3c00-48f5-83e0-503de5833d51 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/381da4bf-3c00-48f5-83e0-503de5833d51">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hans Zimmer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/4a48ed6d-d724-4b57-9f3e-daf9c47c3a45 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/4a48ed6d-d724-4b57-9f3e-daf9c47c3a45">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/b3c9b98f-b079-413c-be18-a0c0c148db59"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/9cc2298e-bac9-41ea-ad6f-624881f3c7a7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Orson Welles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/4a965c1f-552b-4cba-9d72-c9fdaecff955 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/4a965c1f-552b-4cba-9d72-c9fdaecff955">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/d7cf20fe-92b2-411c-9a56-a7a8a5669671"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gus Van Sant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/459cda8f-c0ae-48d7-a561-5f944aa82877 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/459cda8f-c0ae-48d7-a561-5f944aa82877">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Bardo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/50075ed3-2299-4638-97cc-6ffb4bc6da52 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/50075ed3-2299-4638-97cc-6ffb4bc6da52">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/b3c9b98f-b079-413c-be18-a0c0c148db59"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/9cc2298e-bac9-41ea-ad6f-624881f3c7a7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Laurence Olivier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/546088df-f764-40fa-a988-ea34c2f86050 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/546088df-f764-40fa-a988-ea34c2f86050">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tom Stoppard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/6df31a84-c660-4356-b5a4-38cd1cd3f690 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/6df31a84-c660-4356-b5a4-38cd1cd3f690">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gil Junger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/6f87e1ec-052a-4ac5-ac5c-9beca7fa79be -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/6f87e1ec-052a-4ac5-ac5c-9beca7fa79be">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2InformationObject/2e2eb19a-57ea-4a2e-baf7-7ebad0bfb049"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Marion Cotillard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/6240f567-5861-4e0e-a049-92dd492d4196 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/6240f567-5861-4e0e-a049-92dd492d4196">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Al Pacino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/642e284b-b474-4c9b-bd0b-1e198a104807 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/642e284b-b474-4c9b-bd0b-1e198a104807">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/770668a1-162c-48dd-beac-ec1ba3c5f9c2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Akira Kurosawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/65aa84a5-8fa2-455c-a558-3ac078efe702 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/65aa84a5-8fa2-455c-a558-3ac078efe702">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0c2c0367-466f-4be6-8984-dfeda0705e5f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Heath Ledger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/7c7445f1-3ae5-41ba-aa90-3e9005c7435e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/7c7445f1-3ae5-41ba-aa90-3e9005c7435e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0eb90d70-d777-4116-8c0c-f4f24562a486"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Kenneth Branagh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/7550ac72-57b3-455b-855b-d5e6f43ce6a0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/7550ac72-57b3-455b-855b-d5e6f43ce6a0">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/ffdcc5de-25f3-4674-9b4a-d83e8f4180d3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>John Madden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/77bc544e-01da-4fe4-8f7e-eb73d566f416 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/77bc544e-01da-4fe4-8f7e-eb73d566f416">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leonard Bernstein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/78f0ff47-2582-49f2-a9d2-6ae26c6fad47 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/78f0ff47-2582-49f2-a9d2-6ae26c6fad47">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Robert Wise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/8c9ed9ca-87df-4e97-b640-3fe70b5fd2f7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/8c9ed9ca-87df-4e97-b640-3fe70b5fd2f7">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0ae6bb98-df91-48b9-a8c7-b54b7ca9654f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leonardo DiCaprio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/82aa4201-d61f-453c-9f08-1f1e11222ca5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/82aa4201-d61f-453c-9f08-1f1e11222ca5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/0637178e-78c4-4978-9a3f-944ab153c5c8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>John Fletcher</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/827deec2-e560-419b-b13c-533c81ea587c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/827deec2-e560-419b-b13c-533c81ea587c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/3d966ed3-1ff2-4431-b761-0cd4ec89b9dc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tatsuya Nakadai</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/83e559f2-cec5-4b9c-b448-fbef2f347547 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/83e559f2-cec5-4b9c-b448-fbef2f347547">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tim Rice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/83eedd85-ac8c-46bf-83f9-5f25c82c72f2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/83eedd85-ac8c-46bf-83f9-5f25c82c72f2">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/840f496d-f6b3-4890-a1cf-ef084e862894"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tim Roth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/85fa0284-527d-49cd-8fe0-66a48b018233 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/85fa0284-527d-49cd-8fe0-66a48b018233">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rob Minkoff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/869787de-b1c4-4d06-8e7b-70567102fc2c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/869787de-b1c4-4d06-8e7b-70567102fc2c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Elton John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/9b81c60f-103d-4b82-bf6b-b08d265c9d93 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/9b81c60f-103d-4b82-bf6b-b08d265c9d93">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/9dc63e26-0cea-462c-9abe-589fa13be541"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Richard Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/9ba56916-6bd3-497e-870e-e418bb151733 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/9ba56916-6bd3-497e-870e-e418bb151733">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>fratelli Taviani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Agent/958b497c-7a88-4ef8-bb6e-d3fe0276d873 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Agent/958b497c-7a88-4ef8-bb6e-d3fe0276d873">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joss Whedon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2CulturalEvent/1eea1205-43d1-4d82-b122-ae3b670bdd52 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2CulturalEvent/1eea1205-43d1-4d82-b122-ae3b670bdd52">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2TangibleCulturalProperty/4615a140-43a4-431d-afac-e2a10e95a920"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/fc9add3f-fc6d-4c42-a307-21e935443cf6"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2CulturalEvent/37cd1086-45f3-4b1c-9527-9c46b3bf98ec -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2CulturalEvent/37cd1086-45f3-4b1c-9527-9c46b3bf98ec">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2TangibleCulturalProperty/c9918397-003c-4906-8bba-6b8a4cc02ea9"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/983dffd1-8ece-42f6-ae40-bf10ca80ba7e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2CulturalEvent/5d9f9e5b-3515-4ca7-a8a2-93731adbe012 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2CulturalEvent/5d9f9e5b-3515-4ca7-a8a2-93731adbe012">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2TangibleCulturalProperty/6e189e85-0ea1-4c58-b91a-55ab35729905"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/87282e8f-004a-4eb3-8090-213ae8db474f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Berlino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2CulturalEvent/647e586b-825c-4772-b424-21b94d7470d0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2CulturalEvent/647e586b-825c-4772-b424-21b94d7470d0">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2TangibleCulturalProperty/d02ecf2e-398f-47c5-911f-b2170be5e918"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/d41d5ef4-f768-4a86-a7c6-0ce9b7b637bf"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Berlino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2CulturalEvent/72d1ba22-857f-4a3e-8ba4-9af753f6ce3b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2CulturalEvent/72d1ba22-857f-4a3e-8ba4-9af753f6ce3b">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2TangibleCulturalProperty/49f2fcb1-8d54-4def-a62b-eed5b9afce6b"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/4818634e-6121-473a-a754-dbd368b386ca"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Event/1a50ff55-8f8e-49fe-83fa-ac4aedb3d14c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Event/1a50ff55-8f8e-49fe-83fa-ac4aedb3d14c">
+        <rdf:type rdf:resource="https://w3id.org/arco/ontology/core/Event"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>quattrocentesimo anniversario della scomparsa di William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/a8342143-d057-48a9-9c00-7ffe3c6ea69a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/a8342143-d057-48a9-9c00-7ffe3c6ea69a">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/fbc3dc0d-4880-4f95-af96-cab28ec45790"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>tragedia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/adc76883-c87e-460c-b09a-2ccc73d0b47b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/adc76883-c87e-460c-b09a-2ccc73d0b47b">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/e197203f-e44b-477d-998a-c78074a2fea0"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/adf59a49-0c4b-4d09-9a42-73922d4fc680 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/adf59a49-0c4b-4d09-9a42-73922d4fc680">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/546088df-f764-40fa-a988-ea34c2f86050"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/e197203f-e44b-477d-998a-c78074a2fea0"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/ad9f052e-b072-464c-af0d-b67ba6a2166b"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/2ca94f73-605c-4a81-999c-139209db9738"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rosencrantz e Guildenstern sono morti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/b0d73983-dfc5-4243-940c-7db03c13d978 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/b0d73983-dfc5-4243-940c-7db03c13d978">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/b112071c-1a48-4a89-bfbd-1520ba469705"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f841a4c4-33d7-459c-ab82-77060e7a9075"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>pellicola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/b112071c-1a48-4a89-bfbd-1520ba469705 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/b112071c-1a48-4a89-bfbd-1520ba469705">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/9c9ce08f-478c-41c2-bee6-cfa726b033cb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>pellicola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/bdfb327b-6bde-476e-9b01-01c31ad62532 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/bdfb327b-6bde-476e-9b01-01c31ad62532">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>La bisbetica domata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/bec7796f-b630-443e-83be-4283a4b21e55 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/bec7796f-b630-443e-83be-4283a4b21e55">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/2fe7ea7d-404e-4075-b396-e012108ab507"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>teen drama</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/c0d8c3d0-df33-4043-9ee4-7461d958d93e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/c0d8c3d0-df33-4043-9ee4-7461d958d93e">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/2e2eb19a-57ea-4a2e-baf7-7ebad0bfb049"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/c393994c-dcd5-4e9c-b3cc-abab42629ea9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/c393994c-dcd5-4e9c-b3cc-abab42629ea9">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Molto rumore per nulla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/c4ea62ec-ff79-48dd-a75c-fddb5cca644d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/c4ea62ec-ff79-48dd-a75c-fddb5cca644d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Riccardo III - Un uomo, un re</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/c7c9fa10-fa7f-4acf-bddd-160fb05710f8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/c7c9fa10-fa7f-4acf-bddd-160fb05710f8">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/adf59a49-0c4b-4d09-9a42-73922d4fc680"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>tragicommedia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/d111ab85-7b6c-4ede-8a6c-4e93a5529495 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/d111ab85-7b6c-4ede-8a6c-4e93a5529495">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Falstaff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/d57911ad-3653-4058-96f7-f036b55be249 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/d57911ad-3653-4058-96f7-f036b55be249">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tonight e Somewhere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/d5796a43-2e10-4079-90c7-505c999745e9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/d5796a43-2e10-4079-90c7-505c999745e9">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/958b497c-7a88-4ef8-bb6e-d3fe0276d873"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/9c456848-e4be-4dc1-adaf-056fdc5663d6"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Much Ado About Nothing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/d6ea2fbd-e129-4106-b163-3e8c79601e01 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/d6ea2fbd-e129-4106-b163-3e8c79601e01">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/e197203f-e44b-477d-998a-c78074a2fea0"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/d976dab6-faa6-410a-9e22-e437bb0b91d2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/d976dab6-faa6-410a-9e22-e437bb0b91d2">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/6ee6c790-8a05-424c-8011-4c12725444ec"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/dbf38957-d008-4e8d-8cc1-e6e1cee66593 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/dbf38957-d008-4e8d-8cc1-e6e1cee66593">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/05d4ac49-c1e7-4890-9b69-018f4cb01e03"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/5004a0c4-215a-4819-988e-dd6c898e1ee9"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/c393994c-dcd5-4e9c-b3cc-abab42629ea9"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/19c2b7dc-c39a-4d4c-9ee6-55e422f9fd29"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>trasposizioni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/dc199dd1-2e5c-4a74-b39e-75740dce3bf5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/dc199dd1-2e5c-4a74-b39e-75740dce3bf5">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/1c70b976-3323-4fe6-88aa-f9bfa2f1626a"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/256df9e8-6275-4332-a196-b6ce45310bcd"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/25cd09b7-4845-425a-8845-9ab45a0243aa"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>West Side Story</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/dd2d9ee8-fddf-49c1-a9b5-38ddadec4881 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/dd2d9ee8-fddf-49c1-a9b5-38ddadec4881">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f01a0594-49da-4f85-b1e1-c3553c872572"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e9e9b641-03df-4a4b-9b32-61e9d3077db8"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/77bc544e-01da-4fe4-8f7e-eb73d566f416"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2InformationObject/1869e302-6be1-4e70-8c1a-7f17a9436826"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>musical teatrale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/de551d82-9d89-476a-900a-01a8c20182db -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/de551d82-9d89-476a-900a-01a8c20182db">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/fc98672a-9dfe-4262-a53e-cb56699d3fec"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/85fa0284-527d-49cd-8fe0-66a48b018233"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/0904f9e4-f879-491d-b321-52b2e92a34ed"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Il re leone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/e197203f-e44b-477d-998a-c78074a2fea0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/e197203f-e44b-477d-998a-c78074a2fea0">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/e5bbe9d2-a29e-4245-8acc-9d3e33362866 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/e5bbe9d2-a29e-4245-8acc-9d3e33362866">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/19c2b7dc-c39a-4d4c-9ee6-55e422f9fd29"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico V</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/e8c74bdc-1791-46fa-ba86-347ac3878081 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/e8c74bdc-1791-46fa-ba86-347ac3878081">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>America</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/eb44fba7-50ba-434f-9b43-b93d9c3b1d61 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/eb44fba7-50ba-434f-9b43-b93d9c3b1d61">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/44b26290-2cce-413f-8b7b-ef113c3abd04"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>opera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/edceb6fd-eaf7-447b-b3c7-e95440df296c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/edceb6fd-eaf7-447b-b3c7-e95440df296c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>O come Otello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/f01a0594-49da-4f85-b1e1-c3553c872572 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/f01a0594-49da-4f85-b1e1-c3553c872572">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>musical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/f2b14435-7ee9-4c53-aab6-688bd6ce2329 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/f2b14435-7ee9-4c53-aab6-688bd6ce2329">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f5cfda91-48eb-4b0d-9592-c83a3bbf877d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>canzoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/f5bd4797-c51e-4f34-9367-56f2d2367d5c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/f5bd4797-c51e-4f34-9367-56f2d2367d5c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/642e284b-b474-4c9b-bd0b-1e198a104807"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/25095e1e-207a-4cb9-979f-11c2fe8f4795"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/cb2a9a5f-0b5f-49f6-8480-4c8f71f2ac67"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/f5cfda91-48eb-4b0d-9592-c83a3bbf877d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/f5cfda91-48eb-4b0d-9592-c83a3bbf877d">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/83e559f2-cec5-4b9c-b448-fbef2f347547"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/869787de-b1c4-4d06-8e7b-70567102fc2c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Can You Feel the Love Tonight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/f841a4c4-33d7-459c-ab82-77060e7a9075 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/f841a4c4-33d7-459c-ab82-77060e7a9075">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/d976dab6-faa6-410a-9e22-e437bb0b91d2"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/a5080ce5-1497-4b6d-b6f7-d26535f29c4f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare in Love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/fbc3dc0d-4880-4f95-af96-cab28ec45790 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/fbc3dc0d-4880-4f95-af96-cab28ec45790">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/256df9e8-6275-4332-a196-b6ce45310bcd"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/6ee6c790-8a05-424c-8011-4c12725444ec"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/fce34909-ab12-4322-8d16-b12d6e39426c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/fce34909-ab12-4322-8d16-b12d6e39426c">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/256df9e8-6275-4332-a196-b6ce45310bcd"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/ff69b730-8728-41e8-b86c-9a3ccdc827ff -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/ff69b730-8728-41e8-b86c-9a3ccdc827ff">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/d111ab85-7b6c-4ede-8a6c-4e93a5529495"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e27729f5-3c97-481c-8da6-a6b937376fba"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>adattamenti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/05d4ac49-c1e7-4890-9b69-018f4cb01e03 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/05d4ac49-c1e7-4890-9b69-018f4cb01e03">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/26bdb1e7-5c80-4775-ae63-6134f7693ecb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>trasposizioni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/0520bd64-fb09-4938-b15f-72fd8a216d65 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/0520bd64-fb09-4938-b15f-72fd8a216d65">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/07a70215-5887-4b59-bd1e-19a01ca08faa -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/07a70215-5887-4b59-bd1e-19a01ca08faa">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/fd2646d1-1644-4794-90b3-226ede855c28"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Nel bel mezzo di un gelido inverno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/1b707a32-a0f9-423b-87b6-db8ac0c665f5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/1b707a32-a0f9-423b-87b6-db8ac0c665f5">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico VIII</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/1c70b976-3323-4fe6-88aa-f9bfa2f1626a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/1c70b976-3323-4fe6-88aa-f9bfa2f1626a">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/eacb07b7-390b-487a-a890-c211f3e5d05a"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/78f0ff47-2582-49f2-a9d2-6ae26c6fad47"/>
+        <ns2:hasLocation rdf:resource="http://w3id.org/stlab/its/group2Location/1cb46ac5-8d92-4e79-8f0b-2848e1fdb4f4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>West Side Story</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/1869e302-6be1-4e70-8c1a-7f17a9436826 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/1869e302-6be1-4e70-8c1a-7f17a9436826">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stephen Sondheim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/19c2b7dc-c39a-4d4c-9ee6-55e422f9fd29 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/19c2b7dc-c39a-4d4c-9ee6-55e422f9fd29">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico V</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/2e2eb19a-57ea-4a2e-baf7-7ebad0bfb049 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/2e2eb19a-57ea-4a2e-baf7-7ebad0bfb049">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/2fe7ea7d-404e-4075-b396-e012108ab507 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/2fe7ea7d-404e-4075-b396-e012108ab507">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/6df31a84-c660-4356-b5a4-38cd1cd3f690"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/bdfb327b-6bde-476e-9b01-01c31ad62532"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/a62d0b3c-190d-4bbc-897f-02f861e21ad0"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>10 cose che odio di te</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/25095e1e-207a-4cb9-979f-11c2fe8f4795 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/25095e1e-207a-4cb9-979f-11c2fe8f4795">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2InformationObject/3cebdcce-0053-4b02-9e63-ae2003c1b273"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Re Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/256df9e8-6275-4332-a196-b6ce45310bcd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/256df9e8-6275-4332-a196-b6ce45310bcd">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/26bdb1e7-5c80-4775-ae63-6134f7693ecb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/26bdb1e7-5c80-4775-ae63-6134f7693ecb">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/9670d289-ec7b-4dd6-bbd1-c3272058fd7e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo + Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/3cebdcce-0053-4b02-9e63-ae2003c1b273 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/3cebdcce-0053-4b02-9e63-ae2003c1b273">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Re Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/30f74a05-ade8-4859-a8d7-dd122e230881 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/30f74a05-ade8-4859-a8d7-dd122e230881">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>dittico di Enrico IV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/4c1dee1f-be3b-4645-8333-3baaa11b3ddc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/4c1dee1f-be3b-4645-8333-3baaa11b3ddc">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/5394c37d-1856-4f04-b2fb-a7caff5eb2db"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>cult movie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/4e82be49-fbb2-462c-bc93-ad3d3260bf1e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/4e82be49-fbb2-462c-bc93-ad3d3260bf1e">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/c0d8c3d0-df33-4043-9ee4-7461d958d93e"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/a0cf2fb5-b412-412b-9180-1a11be768aa9"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Trono di sangue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/4f13b0cb-33ce-4a42-ac78-a0c093e2b1d9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/4f13b0cb-33ce-4a42-ac78-a0c093e2b1d9">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/ad39f122-db7d-4392-9cd4-1d26fea036ce"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>copione</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/43fa5173-5025-4202-97a4-befb7b0a8306 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/43fa5173-5025-4202-97a4-befb7b0a8306">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/0520bd64-fb09-4938-b15f-72fd8a216d65"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/adc76883-c87e-460c-b09a-2ccc73d0b47b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>adattamento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/44b26290-2cce-413f-8b7b-ef113c3abd04 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/44b26290-2cce-413f-8b7b-ef113c3abd04">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/00f01ab4-7ed2-478e-a49b-2310fd0c728e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>La tempesta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/49178f4e-2bd9-4ea7-9cc1-f5af08f112f3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/49178f4e-2bd9-4ea7-9cc1-f5af08f112f3">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Maria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/5e552407-6a3d-4fdb-8a82-f00a1152ad0e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/5e552407-6a3d-4fdb-8a82-f00a1152ad0e">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/d5796a43-2e10-4079-90c7-505c999745e9"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/edceb6fd-eaf7-447b-b3c7-e95440df296c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>rivisitazioni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/5004a0c4-215a-4819-988e-dd6c898e1ee9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/5004a0c4-215a-4819-988e-dd6c898e1ee9">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2Agent/459cda8f-c0ae-48d7-a561-5f944aa82877"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/46d3d619-4fee-4c22-929d-4e21162c0a9a"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/50b315eb-fb6c-469f-9df4-29c84c4fe1e4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>trasposizioni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/52e1b30e-299e-4035-b9de-282b62bf1bf0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/52e1b30e-299e-4035-b9de-282b62bf1bf0">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/dc199dd1-2e5c-4a74-b39e-75740dce3bf5"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/25cd09b7-4845-425a-8845-9ab45a0243aa"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/5394c37d-1856-4f04-b2fb-a7caff5eb2db -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/5394c37d-1856-4f04-b2fb-a7caff5eb2db">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/736d55a3-a730-4c33-8667-684a1e991f50"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/558b0805-5b23-4ad3-a8ea-97c25665ed67"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Belli e dannati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/54bf699e-dddf-4aa0-9584-bb116e102c12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/54bf699e-dddf-4aa0-9584-bb116e102c12">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/d57911ad-3653-4058-96f7-f036b55be249"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/e8c74bdc-1791-46fa-ba86-347ac3878081"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/49178f4e-2bd9-4ea7-9cc1-f5af08f112f3"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/933aea95-2566-4e58-8183-8889b21b67bd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>brani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/6ee6c790-8a05-424c-8011-4c12725444ec -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/6ee6c790-8a05-424c-8011-4c12725444ec">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/1f88007b-51b0-415b-b339-406febf5e7ac"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/2456799d-1ff4-4708-8d18-3277fafaf782"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/608bb2c2-aade-4700-a484-59d8d13d5014 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/608bb2c2-aade-4700-a484-59d8d13d5014">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/381da4bf-3c00-48f5-83e0-503de5833d51"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>musiche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/6547aadb-71b1-4faa-8f5c-a59e1a240294 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/6547aadb-71b1-4faa-8f5c-a59e1a240294">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/1b707a32-a0f9-423b-87b6-db8ac0c665f5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>testo teatrale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/69798d72-a424-4b67-96a7-50fad3cf5192 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/69798d72-a424-4b67-96a7-50fad3cf5192">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/2fe7ea7d-404e-4075-b396-e012108ab507"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>commedia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/736d55a3-a730-4c33-8667-684a1e991f50 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/736d55a3-a730-4c33-8667-684a1e991f50">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/e5bbe9d2-a29e-4245-8acc-9d3e33362866"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/30f74a05-ade8-4859-a8d7-dd122e230881"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>ciclo di tre drammi storici shakespeariani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/8b1fbfc3-5d6e-4134-bb35-58e3ccf404cd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/8b1fbfc3-5d6e-4134-bb35-58e3ccf404cd">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/e66be8f0-1e14-4aca-8363-5beca4056195"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Otello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/83f2b64f-5541-4309-84c6-1c9970a74e05 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/83f2b64f-5541-4309-84c6-1c9970a74e05">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f841a4c4-33d7-459c-ab82-77060e7a9075"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>commedia sentimentale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/8915ac19-eba1-488f-8dc9-e4bf1043a0c0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/8915ac19-eba1-488f-8dc9-e4bf1043a0c0">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns4:hasTitle rdf:resource="http://w3id.org/stlab/its/group2InformationObject/de551d82-9d89-476a-900a-01a8c20182db"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>lungometraggi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/9c9ce08f-478c-41c2-bee6-cfa726b033cb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/9c9ce08f-478c-41c2-bee6-cfa726b033cb">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/6240f567-5861-4e0e-a049-92dd492d4196"/>
+        <ns1:hasAuthor rdf:resource="http://w3id.org/stlab/its/group2Agent/9ba56916-6bd3-497e-870e-e418bb151733"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2InformationObject/c4ea62ec-ff79-48dd-a75c-fddb5cca644d"/>
+        <ns2:hasLocation rdf:resource="http://w3id.org/stlab/its/group2Location/f87a6e73-ef8a-46e6-8c50-2d417a53610c"/>
+        <ns3:atTime rdf:resource="http://w3id.org/stlab/its/group2TimeInterval/f56521b2-d05d-4acf-95d1-d97ee752da24"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Cesare deve morire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/933aea95-2566-4e58-8183-8889b21b67bd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/933aea95-2566-4e58-8183-8889b21b67bd">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Title"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Something&apos;s Coming</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2InformationObject/97e6c48a-13e0-48c7-b7ae-8758bd7a2b3a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2InformationObject/97e6c48a-13e0-48c7-b7ae-8758bd7a2b3a">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2Agent/459cda8f-c0ae-48d7-a561-5f944aa82877"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>oltre quattrocento credits cinematografici</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Location/f87a6e73-ef8a-46e6-8c50-2d417a53610c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Location/f87a6e73-ef8a-46e6-8c50-2d417a53610c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rebibbia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Location/1cb46ac5-8d92-4e79-8f0b-2848e1fdb4f4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Location/1cb46ac5-8d92-4e79-8f0b-2848e1fdb4f4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Manhattan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Location/33f0ca11-8896-4946-97aa-1be6bf86e618 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Location/33f0ca11-8896-4946-97aa-1be6bf86e618">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stratford-upon-Avon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Location/49e8944e-f348-4d09-b1af-83c2f1c639a7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Location/49e8944e-f348-4d09-b1af-83c2f1c639a7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Belfast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Person/b10f791e-803d-4e99-bbb7-f26b510da7ae -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Person/b10f791e-803d-4e99-bbb7-f26b510da7ae">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Guildenstern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Person/b9ef11bd-10ab-4418-b339-fb47c1ba5ee3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Person/b9ef11bd-10ab-4418-b339-fb47c1ba5ee3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rosencrantz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Person/0a51e8fa-f6ea-4833-b09e-71a185fcf80e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Person/0a51e8fa-f6ea-4833-b09e-71a185fcf80e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/5f4c70e9-8df2-4b4f-be12-16f78367189a"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Person/5f89e953-9870-4708-a5ee-2308f77d47db -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Person/5f89e953-9870-4708-a5ee-2308f77d47db">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Claudio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/a6e490a8-c958-411f-9d5e-c956641bf7b7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/a6e490a8-c958-411f-9d5e-c956641bf7b7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/d7cf20fe-92b2-411c-9a56-a7a8a5669671"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/37403d06-d24a-4a11-a999-53244b5f2817"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/b3c9b98f-b079-413c-be18-a0c0c148db59 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/b3c9b98f-b079-413c-be18-a0c0c148db59">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/770668a1-162c-48dd-beac-ec1ba3c5f9c2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>registi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/c16365ec-7234-413d-b65c-a0db890b8398 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/c16365ec-7234-413d-b65c-a0db890b8398">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/c5e3aca7-9b34-4721-85d0-3e558304665f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/c5e3aca7-9b34-4721-85d0-3e558304665f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/cdc6efc2-4d10-408f-915b-262d41a872b4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>personaggi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/d7cf20fe-92b2-411c-9a56-a7a8a5669671 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/d7cf20fe-92b2-411c-9a56-a7a8a5669671">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/770668a1-162c-48dd-beac-ec1ba3c5f9c2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/df549799-54dd-4f3d-928b-974019bd4d4b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/df549799-54dd-4f3d-928b-974019bd4d4b">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Scott Favor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/ffdcc5de-25f3-4674-9b4a-d83e8f4180d3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/ffdcc5de-25f3-4674-9b4a-d83e8f4180d3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/37403d06-d24a-4a11-a999-53244b5f2817"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/0ae6bb98-df91-48b9-a8c7-b54b7ca9654f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/0ae6bb98-df91-48b9-a8c7-b54b7ca9654f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/0c2c0367-466f-4be6-8984-dfeda0705e5f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/0c2c0367-466f-4be6-8984-dfeda0705e5f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>protagonisti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/0eb90d70-d777-4116-8c0c-f4f24562a486 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/0eb90d70-d777-4116-8c0c-f4f24562a486">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>cineasti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/0637178e-78c4-4978-9a3f-944ab153c5c8 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/0637178e-78c4-4978-9a3f-944ab153c5c8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>collega</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/11bc837c-efd9-4c9c-a776-a2b4ff73b06a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/11bc837c-efd9-4c9c-a776-a2b4ff73b06a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>autore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/12195034-c9eb-4319-a035-3e476cd9a187 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/12195034-c9eb-4319-a035-3e476cd9a187">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Actor"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/627ac549-e0e9-4beb-b2c5-a4f5dbdd2f5b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>River Phoenix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/181b4204-baa9-4ebc-9bb0-15c971e66f1c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/181b4204-baa9-4ebc-9bb0-15c971e66f1c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>drammaturghi britannici</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/197696ac-93e8-46e9-8632-19eaa82722af -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/197696ac-93e8-46e9-8632-19eaa82722af">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ns2:hasRole rdf:resource="http://w3id.org/stlab/its/group2Role/9dd34bad-dcc3-4caf-912a-635b5286dcdb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joe Harper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/3d966ed3-1ff2-4431-b761-0cd4ec89b9dc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/3d966ed3-1ff2-4431-b761-0cd4ec89b9dc">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hidetora Ichimonji</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/37403d06-d24a-4a11-a999-53244b5f2817 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/37403d06-d24a-4a11-a999-53244b5f2817">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/4a46c7be-b144-4dfb-bebc-11cb89d9f54e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/4a46c7be-b144-4dfb-bebc-11cb89d9f54e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/group2Role/9cc2298e-bac9-41ea-ad6f-624881f3c7a7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/5f4c70e9-8df2-4b4f-be12-16f78367189a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/5f4c70e9-8df2-4b4f-be12-16f78367189a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/55b1501a-20a7-4c04-bcae-cd679e0678f7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/55b1501a-20a7-4c04-bcae-cd679e0678f7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Viola de Lesseps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/57a6ff81-55b5-42ed-84ec-9669566812e5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/57a6ff81-55b5-42ed-84ec-9669566812e5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>moglie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/627ac549-e0e9-4beb-b2c5-a4f5dbdd2f5b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/627ac549-e0e9-4beb-b2c5-a4f5dbdd2f5b">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Mikey Waters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/7a7931a6-fb32-4b0c-ac10-8d3098d4a6b5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/7a7931a6-fb32-4b0c-ac10-8d3098d4a6b5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ns1:isInspiredBy rdf:resource="http://w3id.org/stlab/its/group2Role/5f4c70e9-8df2-4b4f-be12-16f78367189a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Simba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/770668a1-162c-48dd-beac-ec1ba3c5f9c2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/770668a1-162c-48dd-beac-ec1ba3c5f9c2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/840f496d-f6b3-4890-a1cf-ef084e862894 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/840f496d-f6b3-4890-a1cf-ef084e862894">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Guildenstern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/8958c7a1-5d2c-4312-b9ab-ee7db4c5f4fc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/8958c7a1-5d2c-4312-b9ab-ee7db4c5f4fc">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>drammaturgo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/9cc2298e-bac9-41ea-ad6f-624881f3c7a7 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/9cc2298e-bac9-41ea-ad6f-624881f3c7a7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attori</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/9dc63e26-0cea-462c-9abe-589fa13be541 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/9dc63e26-0cea-462c-9abe-589fa13be541">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tony</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/9dd34bad-dcc3-4caf-912a-635b5286dcdb -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/9dd34bad-dcc3-4caf-912a-635b5286dcdb">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attore disoccupato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/93cbbb88-11f0-4c49-ba64-ee53ad172c41 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/93cbbb88-11f0-4c49-ba64-ee53ad172c41">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Maria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2Role/94181df3-72d7-4ba8-b71f-be39d0182335 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2Role/94181df3-72d7-4ba8-b71f-be39d0182335">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rosencrantz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/c9918397-003c-4906-8bba-6b8a4cc02ea9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/c9918397-003c-4906-8bba-6b8a4cc02ea9">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leone d&apos;Oro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/d02ecf2e-398f-47c5-911f-b2170be5e918 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/d02ecf2e-398f-47c5-911f-b2170be5e918">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Orso d&apos;Oro come miglior film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/4615a140-43a4-431d-afac-e2a10e95a920 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/4615a140-43a4-431d-afac-e2a10e95a920">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Coppa Volpi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/49f2fcb1-8d54-4def-a62b-eed5b9afce6b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/49f2fcb1-8d54-4def-a62b-eed5b9afce6b">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leone d&apos;Argento</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/6e189e85-0ea1-4c58-b91a-55ab35729905 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/6e189e85-0ea1-4c58-b91a-55ab35729905">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>miglior attore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/74acd25e-2f5a-41a2-920e-2a26f9e7114a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/74acd25e-2f5a-41a2-920e-2a26f9e7114a">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f01a0594-49da-4f85-b1e1-c3553c872572"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>dieci premi Oscar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TangibleCulturalProperty/8470e690-29fc-4512-9882-0523f40c8263 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TangibleCulturalProperty/8470e690-29fc-4512-9882-0523f40c8263">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/group2/ontology/Prize"/>
+        <ns6:involvesCulturalProperty rdf:resource="http://w3id.org/stlab/its/group2InformationObject/f841a4c4-33d7-459c-ab82-77060e7a9075"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>sette premi Oscar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/a0cf2fb5-b412-412b-9180-1a11be768aa9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/a0cf2fb5-b412-412b-9180-1a11be768aa9">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1957</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/a5080ce5-1497-4b6d-b6f7-d26535f29c4f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/a5080ce5-1497-4b6d-b6f7-d26535f29c4f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1998</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/a62d0b3c-190d-4bbc-897f-02f861e21ad0 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/a62d0b3c-190d-4bbc-897f-02f861e21ad0">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1999</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/ad9f052e-b072-464c-af0d-b67ba6a2166b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/ad9f052e-b072-464c-af0d-b67ba6a2166b">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1966</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/cb2a9a5f-0b5f-49f6-8480-4c8f71f2ac67 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/cb2a9a5f-0b5f-49f6-8480-4c8f71f2ac67">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1985</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/d41d5ef4-f768-4a86-a7c6-0ce9b7b637bf -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/d41d5ef4-f768-4a86-a7c6-0ce9b7b637bf">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/d69171c8-67f8-4aea-ba3b-25054076e8fe -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/d69171c8-67f8-4aea-ba3b-25054076e8fe">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <ns4:date rdf:resource="http://w3id.org/stlab/its/group2Event/1a50ff55-8f8e-49fe-83fa-ac4aedb3d14c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>23 aprile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/f56521b2-d05d-4acf-95d1-d97ee752da24 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/f56521b2-d05d-4acf-95d1-d97ee752da24">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1996</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/fc9add3f-fc6d-4c42-a307-21e935443cf6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/fc9add3f-fc6d-4c42-a307-21e935443cf6">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1991</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/00f01ab4-7ed2-478e-a49b-2310fd0c728e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/00f01ab4-7ed2-478e-a49b-2310fd0c728e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1611</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/0904f9e4-f879-491d-b321-52b2e92a34ed -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/0904f9e4-f879-491d-b321-52b2e92a34ed">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1994</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/2ca94f73-605c-4a81-999c-139209db9738 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/2ca94f73-605c-4a81-999c-139209db9738">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1990</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/2456799d-1ff4-4708-8d18-3277fafaf782 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/2456799d-1ff4-4708-8d18-3277fafaf782">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1968</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/25cd09b7-4845-425a-8845-9ab45a0243aa -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/25cd09b7-4845-425a-8845-9ab45a0243aa">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1961</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/46d3d619-4fee-4c22-929d-4e21162c0a9a -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/46d3d619-4fee-4c22-929d-4e21162c0a9a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>negli ultimi tre decenni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/4818634e-6121-473a-a754-dbd368b386ca -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/4818634e-6121-473a-a754-dbd368b386ca">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1995</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/5f1da41b-6dfd-4deb-aaca-505c68fb6d4f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/5f1da41b-6dfd-4deb-aaca-505c68fb6d4f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1960</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/50b315eb-fb6c-469f-9df4-29c84c4fe1e4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/50b315eb-fb6c-469f-9df4-29c84c4fe1e4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>fra gli anni Quaranta e Sessanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/558b0805-5b23-4ad3-a8ea-97c25665ed67 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/558b0805-5b23-4ad3-a8ea-97c25665ed67">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>anni Novanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/87282e8f-004a-4eb3-8090-213ae8db474f -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/87282e8f-004a-4eb3-8090-213ae8db474f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1997</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/9c456848-e4be-4dc1-adaf-056fdc5663d6 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/9c456848-e4be-4dc1-adaf-056fdc5663d6">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/9670d289-ec7b-4dd6-bbd1-c3272058fd7e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/9670d289-ec7b-4dd6-bbd1-c3272058fd7e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1996</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/group2TimeInterval/983dffd1-8ece-42f6-ae40-bf10ca80ba7e -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/group2TimeInterval/983dffd1-8ece-42f6-ae40-bf10ca80ba7e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1990</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
